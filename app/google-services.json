@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "757708817986",
+    "project_id": "emotionanalyzerapp",
+    "storage_bucket": "emotionanalyzerapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757708817986:android:2f5c298e09065d51fe0fdb",
+        "android_client_info": {
+          "package_name": "com.example.emotionanalyzerapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADnpc6HZYqjJm9fF1oKfE1Yf1Bd1NJCrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

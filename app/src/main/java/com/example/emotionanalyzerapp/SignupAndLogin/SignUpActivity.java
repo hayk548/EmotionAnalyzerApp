@@ -73,9 +73,9 @@ public class SignUpActivity extends AppCompatActivity {
                                             if (task1.isSuccessful()) {
                                                 Toast.makeText(SignUpActivity.this, "Verification email sent!", Toast.LENGTH_SHORT).show();
                                                 Intent intent = new Intent(SignUpActivity.this, WaitingForEmailActivity.class);
+                                                finish();
                                                 setContentView(R.layout.activity_waiting_for_email);
                                                 startActivity(intent);
-                                                finish();
                                             }
                                         });
                             }
@@ -86,9 +86,3 @@ public class SignUpActivity extends AppCompatActivity {
                 });
     }
 }
-//                            if (user != null && user.isEmailVerified()) {
-//                                Toast.makeText(this, "Email Verified!", Toast.LENGTH_SHORT).show();
-//                                setContentView(R.layout.activity_text);
-//                            }
-//                        }
-//}

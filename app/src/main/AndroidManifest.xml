@@ -22,5 +22,7 @@
         <activity
             android:name=".SignupAndLogin.SignUpActivity"
             android:exported="false" />
+        <activity android:name=".SignupAndLogin.WaitingForEmailActivity"/>
+
     </application>
 </manifest>

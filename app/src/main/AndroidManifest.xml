@@ -11,7 +11,7 @@
 
         <!-- MainActivity (Launcher) -->
         <activity
-            android:name=".MainActivity"
+            android:name=".SignupAndLogin.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,7 +20,7 @@
         </activity>
 
         <activity
-            android:name=".SignUpActivity"
+            android:name=".SignupAndLogin.SignUpActivity"
             android:exported="false" />
     </application>
 </manifest>

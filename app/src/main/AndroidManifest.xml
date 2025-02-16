@@ -9,7 +9,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EmotionAnalyzerApp">
 
-        <!-- MainActivity (Launcher) -->
         <activity
             android:name=".SignupAndLogin.MainActivity"
             android:exported="true">
@@ -24,5 +23,8 @@
             android:exported="false" />
         <activity android:name=".SignupAndLogin.WaitingForEmailActivity"/>
 
+        <activity android:name=".choose.AudioInputActivity"/>
+        <activity android:name=".choose.MainActivity"/>
+        <activity android:name=".choose.TextInputActivity"/>
     </application>
 </manifest>

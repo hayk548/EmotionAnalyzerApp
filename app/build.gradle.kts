@@ -1,6 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
-    id("com.google.gms.google-services")
+    id("com.google.gms.google-services") // Firebase and Google Services Plugin
 }
 
 android {
@@ -26,29 +26,24 @@ android {
             )
         }
     }
+
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
+    buildToolsVersion = "35.0.0"
 }
 
 dependencies {
-
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
-    implementation(libs.firebase.auth)
-    implementation(platform("com.google.firebase:firebase-bom:33.8.0"))
-    implementation("com.google.firebase:firebase-analytics")
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.ext.junit)
-    androidTestImplementation(libs.espresso.core)
+    implementation(platform("com.google.firebase:firebase-bom:33.9.0"))
+    implementation("com.google.firebase:firebase-auth:")
+    implementation("com.google.firebase:firebase-analytics:")
+    implementation("com.google.firebase:firebase-firestore:")
+//    implementation("com.google.cloud:google-cloud-speech:")
+//    implementation("com.google.cloud:google-cloud-language:")
 
-//    implementation(com.google.mlkit:face-detection:16.1.6)
-//    implementation(com.google.mlkit:nl:entity-extraction:17.0.5)
-//    implementation(com.google.mlkit:speech-detection:1.0.3)
-//    implementation(androidx.lifecycle:lifecycle-extensions:2.2.0)
-//    implementation(androidx.recyclerview:recyclerview:1.2.1)
-//    implementation(com.github.PhilJay:MPAndroidChart:v3.1.0)
 }

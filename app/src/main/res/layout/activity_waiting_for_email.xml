@@ -43,7 +43,9 @@
         android:padding="10dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/timerTextView"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFEA00"
+        android:textColor="#000000" />
 
     <Button
         android:id="@+id/resendEmailButton"
@@ -55,6 +57,20 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/checkVerificationButton"
         android:layout_marginTop="10dp"
+        android:backgroundTint="#9B4DCA"
+        android:textColor="#FFFFFF"
         android:enabled="false" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your email"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#9B4DCA"
+        android:textColor="#FFFFFF" />
 
 </RelativeLayout>
